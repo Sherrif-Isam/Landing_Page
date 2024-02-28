@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="index.html" href="https://8000-sherrifisam-landingpage-yflnohrgi6t.ws-eu108.gitpod.io/">
+    <link rel="stylesheet2" href="assets/css/style.css">
+
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="assets/css/booking_style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Navigation bar code copied from index.html -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#pricing">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#login">Login</a>
+                    </li>
+
+                </ul>
+                <button class="btn btn-primary ms-lg-3">Join Us</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Rest of your booking page content -->
+
+    <div class="inner-layer">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col-sm-7">
+                    <div class="content">
+                        <h1>Book Your Time Slot Here</h1>
+                        <p> 
+                            Welcome to our spa booking portal. Discover the ultimate relaxation experience tailored just for you.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-sm-5   d-flex justify-content-end pr-0">
+                    <div class="form-data">
+                        <div class="form-head">
+                            <h2>Book Appointment</h2>
+                        </div>
+                        <div class="form-body">
+                            <form id="bookingForm">
+                                <div class="row form-row">
+                                    <input type="text" placeholder="Enter Full Name" class="form-control"></input>
+                                </div>
+                                <div class="row form-row">
+                                    <input type="text" placeholder="Enter Phone Number" class=" form-control"></input>
+                                </div>
+                                <div class="row form-row">
+                                    <input type="text" placeholder="Enter Email Address" class="form-control"></input>
+                                </div>
+                                <div class="row form-row">
+                                    <select class="form-control" id="treatment-select">
+                                        <option value="">Choose Treatment</option>
+                                        <option value="Single Treatment">Single Treatment</option>
+                                        <option value="Dual Treatments">Dual Treatments</option>
+                                        <option value="Triple Treatments">Triple Treatments</option>
+                                        <option value="Full Treatments Package">Full Treatments Package</option>
+                                    </select>
+                                </div>
+                                <div class="row form-row">
+                                    <input id="dat" type="text" placeholder="Enter Appointment Date" class="form-control"></input>
+                                </div>
+
+                                <h6>Address Details</h6>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Enter Area" class="form-control"></input>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Enter City" class="form-control"></input>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Enter County" class="form-control"></input>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder="Post Code" class="form-control"></input>
+                                    </div>
+                                </div>
+                                <div class="row form-row">
+                                    <button class="btn btn-success btn-appointment">
+                                        Book Appointment
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Include jQuery (required by Bootstrap Datepicker) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Include Bootstrap Datepicker JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dat").datepicker();
+        })
+    </script>    
+
+</body>
+
+</html>
