@@ -9,85 +9,128 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="index.html" href="https://8000-sherrifisam-landingpage-yflnohrgi6t.ws-eu108.gitpod.io/">
-    <link rel="stylesheet2" href="assets/css/style.css">
+    <link rel="home" href="index.html">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Style Sheet-->
-    <link rel="stylesheet" href="assets/css/booking_style.css">
+
     <title>Document</title>
 </head>
 
-<body>
+<body class="booking-page" style="background-image: url('../images/bakoor.jpg')">
+
+    <!--NAV BAR START-->
+
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="assets/images/logo5.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Login</a>
+                    </li>
+
+                </ul>
+                <button class="btn btn-primary ms-lg-3"> <a href="#contact">Join Us</a></button>
+            </div>
+        </div>
+    </nav>
 
 
-    
+
 
     <!-- Rest of my booking page content -->
+    <div class="content-wrapper">
+        <div class="inner-layer  class=" content-wrapper"">
+            <div class="container">
+                <div class="row no-margin">
+                    <div class="col-sm-7">
+                        <div class="content">
+                            <h1>Book Your Time Slot Here</h1>
+                            <p>
+                                Welcome to our spa booking portal. Discover the ultimate relaxation experience tailored
+                                just for you.
+                            </p>
 
-    <div class="inner-layer">
-        <div class="container">
-            <div class="row no-margin">
-                <div class="col-sm-7">
-                    <div class="content">
-                        <h1>Book Your Time Slot Here</h1>
-                        <p> 
-                            Welcome to our spa booking portal. Discover the ultimate relaxation experience tailored just for you.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-sm-5   d-flex justify-content-end pr-0">
-                    <div class="form-data">
-                        <div class="form-head">
-                            <h2>Book Appointment</h2>
                         </div>
-                        <div class="form-body">
-                            <form id="bookingForm">
-                                <div class="row form-row">
-                                    <input type="text" placeholder="Enter Full Name" class="form-control"></input>
-                                </div>
-                                <div class="row form-row">
-                                    <input type="text" placeholder="Enter Phone Number" class=" form-control"></input>
-                                </div>
-                                <div class="row form-row">
-                                    <input type="text" placeholder="Enter Email Address" class="form-control"></input>
-                                </div>
-                                <div class="row form-row">
-                                    <select class="form-control" id="treatment-select">
-                                        <option value="">Choose Treatment</option>
-                                        <option value="Single Treatment">Single Treatment</option>
-                                        <option value="Dual Treatments">Dual Treatments</option>
-                                        <option value="Triple Treatments">Triple Treatments</option>
-                                        <option value="Full Treatments Package">Full Treatments Package</option>
-                                    </select>
-                                </div>
-                                <div class="row form-row">
-                                    <input id="dat" type="text" placeholder="Enter Appointment Date" class="form-control"></input>
-                                </div>
+                    </div>
+                    <div class="col-sm-5   d-flex justify-content-end pr-0">
+                        <div class="form-data">
+                            <div class="form-head">
+                                <h2>Book Appointment</h2>
+                            </div>
+                            <div class="form-body">
+                                <form id="bookingForm">
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Enter Full Name" class="form-control"></input>
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Enter Phone Number"
+                                            class=" form-control"></input>
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Enter Email Address"
+                                            class="form-control"></input>
+                                    </div>
+                                    <div class="row form-row">
+                                        <select class="form-control" id="treatment-select">
+                                            <option value="">Choose Treatment</option>
+                                            <option value="Single Treatment">Single Treatment</option>
+                                            <option value="Dual Treatments">Dual Treatments</option>
+                                            <option value="Triple Treatments">Triple Treatments</option>
+                                            <option value="Full Treatments Package">Full Treatments Package</option>
+                                        </select>
+                                    </div>
+                                    <div class="row form-row">
+                                        <input id="dat" type="text" placeholder="Enter Appointment Date"
+                                            class="form-control"></input>
+                                    </div>
 
-                                <h6>Address Details</h6>
-                                <div class="row form-row">
-                                    <div class="col-sm-6">
-                                        <input type="text" placeholder="Enter Area" class="form-control"></input>
+                                    <h6>Address Details</h6>
+                                    <div class="row form-row">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter Area" class="form-control"></input>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter City" class="form-control"></input>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" placeholder="Enter City" class="form-control"></input>
+                                    <div class="row form-row">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter County" class="form-control"></input>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Post Code" class="form-control"></input>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row form-row">
-                                    <div class="col-sm-6">
-                                        <input type="text" placeholder="Enter County" class="form-control"></input>
+                                    <div class="row form-row">
+                                        <button class="btn btn-success btn-appointment">
+                                            Book Appointment
+                                        </button>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" placeholder="Post Code" class="form-control"></input>
-                                    </div>
-                                </div>
-                                <div class="row form-row">
-                                    <button class="btn btn-success btn-appointment">
-                                        Book Appointment
-                                    </button>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,9 +138,66 @@
         </div>
     </div>
 
+    <!--Start of Footer-->
 
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <h1 class="text-white">NUBIA SPA</h1>
+                        <h6 class="text-white gy-4">REVITALIZE YOUR SPIRIT,</h6>
+                        <h6 class="text-white gy-4"> NOURISH YOUR SOUL</h6>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">Brand</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pricing">Prices</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">More</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
 
-    
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>Address: Nubia SPA ,Royal Street, Luxor City, Nubia, The Oasis 83475</li>
+                            <li>Email: info@nubiaspaoasis.com</li>
+                            <li>Phone: (+20) 0 123 456 7890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        © 2024 copyright all right reserved | Designed by Sherrif Isam
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--End of Footer-->
+
 
     <!-- Include Bootstrap Datepicker CSS -->
     <link rel="stylesheet"
@@ -113,10 +213,10 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#dat").datepicker();
         })
-    </script>    
+    </script>
 
 </body>
 
